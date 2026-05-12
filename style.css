@@ -1,0 +1,128 @@
+:root {
+    --primary-red: #d00000;
+    --accent-yellow: #ffba08;
+    --bg-white: #ffffff;
+    --text-dark: #1a1a1a;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+.main-nav {
+    background: linear-gradient(90deg, var(--primary-red), var(--accent-yellow));
+    padding: 1rem 0;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: var(--text-dark);
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.text-block {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.text-block p {
+    margin-bottom: 20px;
+}
+
+.text-block h3 {
+    color: var(--primary-red);
+    margin: 25px 0 10px 0;
+}
+
+.text-block ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.img-hero {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+}
+
+.section-title {
+    color: var(--primary-red);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: var(--primary-red);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.map-container {
+    margin-top: 30px;
+    padding: 10px;
+    background: linear-gradient(90deg, var(--primary-red), var(--accent-yellow));
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    width: 100%;
+}
+
+.map-container iframe {
+    display: block;
+    border-radius: 10px;
+}
